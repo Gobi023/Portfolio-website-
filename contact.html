@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8fafc">
+    <meta name="description" content="Contact gobz about a project or collaboration.">
+    <title>Contact — gobz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-shell" aria-label="Main navigation">
+        <a class="wordmark" href="index.html" aria-label="gobz home"><span class="wordmark-mark">G</span> gobz<span class="wordmark-dot">.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu"><span></span><span></span></button>
+        <ul class="nav-links" id="primary-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="skills.html">Skills</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-contact" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-wrap contact-section" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">HAVE A GOOD ONE IN MIND?</p>
+            <h1 id="contact-title">Let’s make<br><span>something matter.</span></h1>
+            <p class="contact-lede">Have a project, a question, or just want to say hello? I’d love to hear what you’re thinking.</p>
+            <a class="email-link" href="mailto:gobi@example.com">gobi@example.com <span aria-hidden="true">↗</span></a>
+            <p class="contact-note"><span class="status-dot"></span> Usually replies within 2 business days</p>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Your name <span>*</span>
+                <input id="name" name="name" type="text" autocomplete="name" value="gobz" required>
+              </label>
+              <label for="email">Email address <span>*</span>
+                <input id="email" name="email" type="email" autocomplete="email" value="gobi@example.com" required>
+              </label>
+            </div>
+            <label for="subject">What’s this about?
+              <input id="subject" name="subject" type="text" value="Website project inquiry">
+            </label>
+            <label for="message">A little about your project <span>*</span>
+              <textarea id="message" name="message" rows="4" required>Tell me about your project</textarea>
+            </label>
+            <p class="form-hint">This demo form opens your email app after validation. It doesn’t store or send your information.</p>
+            <button class="button button-primary submit-button" type="submit">Send a note <span aria-hidden="true">↗</span></button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="wordmark footer-mark" href="index.html"><span class="wordmark-mark">G</span> gobz<span class="wordmark-dot">.</span></a>
+        <p>Designed with intention. Built with care.</p>
+        <a class="back-top" href="index.html">BACK TO HOME <span aria-hidden="true">↑</span></a>
+        <small>© <span id="current-year">2026</span> gobz</small>
+      </div>
+    </footer>
+  </body>
+</html>
